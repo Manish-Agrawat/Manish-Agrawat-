@@ -70,11 +70,33 @@ document.addEventListener("DOMContentLoaded", function () {
   const typingElements = [
     {
       selector: ".typing",
-      words: ["Frontend Developer", "Backend Developer", "Fullstack Developer"],
+      words: [
+        "Frontend Developer",
+        "Backend Developer",
+        "Fullstack Developer",
+        "Web Developer",
+        "Responsive Web Designer",
+        "UI/UX Designer",
+        "React Developer",
+        "JavaScript Developer",
+        "HTML/CSS Developer",
+        "Node.js Developer",
+      ],
     },
     {
       selector: ".typing-2",
-      words: ["Frontend Developer", "Backend Developer", "Fullstack Developer"],
+      words: [
+        "Frontend Developer",
+        "Backend Developer",
+        "Fullstack Developer",
+        "Web Developer",
+        "Responsive Web Designer",
+        "UI/UX Designer",
+        "React Developer",
+        "JavaScript Developer",
+        "HTML/CSS Developer",
+        "Node.js Developer",
+      ],
     },
   ];
 
@@ -99,4 +121,20 @@ document.addEventListener("DOMContentLoaded", function () {
       startIndex = (startIndex + 1) % itemCount;
     }, 2000);
   });
+});
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  },
+  {
+    threshold: 0.1,
+  }
+);
+
+document.querySelectorAll(".fade-in").forEach((item) => {
+  observer.observe(item);
 });
