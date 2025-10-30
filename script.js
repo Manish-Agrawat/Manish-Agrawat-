@@ -81,6 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "JavaScript Developer",
         "HTML/CSS Developer",
         "Node.js Developer",
+        "App Developer",
       ],
     },
     {
@@ -96,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "JavaScript Developer",
         "HTML/CSS Developer",
         "Node.js Developer",
+        "App Developer",
       ],
     },
   ];
